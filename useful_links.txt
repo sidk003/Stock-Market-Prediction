@@ -1,5 +1,7 @@
+To clear variables in Jupyter notebook: 
 https://stackoverflow.com/questions/22934204/how-to-clear-variables-in-ipython : 
 %reset_selective <regular_expression>
 
+To check what remote branch is being tracked by what local branch:
 https://stackoverflow.com/questions/4950725/how-can-i-see-which-git-branches-are-tracking-which-remote-upstream-branch
 git branch -vv
