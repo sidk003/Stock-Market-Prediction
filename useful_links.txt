@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/22934204/how-to-clear-variables-in-ipython : 
+%reset_selective <regular_expression>
+
+https://stackoverflow.com/questions/4950725/how-can-i-see-which-git-branches-are-tracking-which-remote-upstream-branch
+git branch -vv
