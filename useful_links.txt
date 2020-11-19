@@ -5,3 +5,36 @@ https://stackoverflow.com/questions/22934204/how-to-clear-variables-in-ipython :
 To check what remote branch is being tracked by what local branch:
 https://stackoverflow.com/questions/4950725/how-can-i-see-which-git-branches-are-tracking-which-remote-upstream-branch
 git branch -vv
+
+To check python version: python --version
+To check python 3 version: py --version
+Upgrade to python 3:https://www.python.org/ftp/python/3.7.4/python-3.7.4.exe
+
+If Tensorflow is not found, this error will show up: ModuleNotFoundError: No module named 'tensorflow'
+fix: py -3 -m pip install --user --upgrade tensorflow  # install in $HOME
+
+Tensorflow website: https://www.tensorflow.org/install/pip#windows
+
+use 'py' instead of 'python3' on windows
+
+Never call the pip or pip3 scripts directly unless you really understand what the implications are.
+
+Instead always prefer calling the exact Python interpreter you are targeting and tell it to run the pip module:
+
+path/to/my/pythonX.Y -m pip
+path/to/my/python -m pip
+pythonX.Y -m pip
+python3 -m pip (py -3 -m pip)
+python -m pip
+
+https://stackoverflow.com/questions/60348649/python-version-does-not-update
+
+Tensorflow v2 (latest installed) syntaxes don't match with Tensorflow v1(used in tutorial), 
+Fix: import tensorflow.compat.v1 as tf
+     tf.disable_v2_behavior() 
+
+     instead of 
+     import tensorflow as tf
+
+     Ignore the warning
+
