@@ -38,3 +38,4 @@ Fix: import tensorflow.compat.v1 as tf
 
      Ignore the warning
 
+Install Keras: py -3 -m pip install keras
